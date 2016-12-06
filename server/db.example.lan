@@ -1,0 +1,19 @@
+;
+; BIND data file for local db.example.lan net
+;
+$TTL	604800
+@	IN	SOA	example.lan. root.example.lan. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	node1.example.lan.
+@	IN	A	192.168.1.12
+node1	IN	A	192.168.1.12
+www	IN	A	192.168.1.12
+ftp	IN	A	192.168.1.12
+ssh	IN	A	192.168.1.12
+ubuntu	IN	A	192.168.1.12
+@	IN	AAAA	::1
